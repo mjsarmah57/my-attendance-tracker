@@ -6,7 +6,7 @@ import math
 # 1. Setup & Connection
 SUB_GOAL = 0.60
 TOTAL_GOAL = 0.75
-supabase = create_client("YOUR_URL", "YOUR_KEY")
+supabase = create_client("https://sxxdzlsmsgopybwzjbnc.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4eGR6bHNtc2dvcHlid3pqYm5jIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3ODQyOTA2NCwiZXhwIjoyMDk0MDA1MDY0fQ.druJl5ZaVBqr9xQpnN1AQ0NPQgbYjNgCYq7WDaCtbsk")
 
 st.set_page_config(page_title="Attendance Pro", layout="wide")
 st.title("📊 Attendance Tracking System")
