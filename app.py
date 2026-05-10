@@ -23,7 +23,7 @@ with st.sidebar:
         supabase.table("attendance_logs").insert({"subject_name": selected_sub, "status": "Absent"}).execute()
 
 # 3. Data Processing & Logic
-data = supabase.table("attendance_logs").select("*").execute()
+data = supabase.table("attendance").select("*").execute()
 df = pd.DataFrame(data.data)
 
 if not df.empty:
